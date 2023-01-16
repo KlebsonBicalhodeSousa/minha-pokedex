@@ -5,6 +5,7 @@ import { ButtonCapture, ButtonDetail, CardButton, CardPokemon, ImageContainer, I
 
 const PokemonCard = ({pokemon}) => {
     const navigate = useNavigate()
+    console.log(pokemon)
 
     return(
         <CardPokemon>

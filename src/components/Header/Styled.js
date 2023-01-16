@@ -1,25 +1,28 @@
 import styled from "styled-components";
 
-export const NaviBar = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+export const NavBar = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
   align-items: center;
   width: 100%;
   background-color: white;
-  height: 10rem;
+  /* height: 5rem; */
   position: relative;
+  border: solid 1px black;
 `;
 export const ContainerImg = styled.div`
   img {
-    position: absolute;
+    /* position: absolute;
     width: 19.188rem;
     height: 7.063rem;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
   }
 `;
+
+export const ContainerButton = styled.div``
 export const ButtonPokedex = styled.button`
   display: flex;
   flex-direction: row;
@@ -27,11 +30,11 @@ export const ButtonPokedex = styled.button`
   align-items: center;
   width: 15%;  
   min-width: 80px;
-  left: 80%;
+  /* left: 80%;
   position: absolute;
   height: 8vh;
   top: 50%;
-  transform: translate(-20%, -50%);
+  transform: translate(-20%, -50%); */
   color: white;
   background: #33a4f5;
   border-radius: 8px;
@@ -50,11 +53,11 @@ export const ButtonPokemons = styled.button`
   align-items: center;
   width: 13.125rem;
   text-decoration-line: underline;
-  position: absolute;
+  /* position: absolute;
   min-width: 3.75rem;
   right: 75%;  
   top: 50%;
-  transform: translate(-20%, -50%);
+  transform: translate(-20%, -50%); */
   color: #080707;
   background-color: white;
   border: none;  

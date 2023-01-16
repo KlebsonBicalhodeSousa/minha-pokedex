@@ -7,7 +7,7 @@ const GlobalState = ({children}) => {
   const [pokemonNames, setPokemonNames] = useState([])
   const [pokemons, setPokemons] = useState([])
   const [pokedex, setPokedex] = useState([])
-  // console.log(pokemons)
+  // console.log(pokemonNames)
 
   useEffect(() => {
     getPokemonNames()
@@ -18,11 +18,11 @@ const GlobalState = ({children}) => {
       axios.get(item.url)
       .then((res) => {
         newList.push(res.data)
-        if(newList.length === 30) {
+        if(newList.length === 20) {
           const orderList = newList.sort((a, b) =>{            
-              return a.id - b.id;           
+            return a.id - b.id;           
           })
-          setPokemons(orderList)
+          setPokemons(newList)
         }
       })
       .catch((err) => {

@@ -3,9 +3,10 @@ import { backgroundCard } from "../../constants/colors";
 
 export const PokeInfosContainer = styled.main`
   height: 80vh;
-  margin: 20px 10vw;
   display: flex;
+  gap: 10px;
   justify-content: space-evenly;
+  border: solid 1px blue;
 `;
 
 export const ImagesContainer = styled.div`

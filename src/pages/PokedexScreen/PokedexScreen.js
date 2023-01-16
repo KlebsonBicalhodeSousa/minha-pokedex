@@ -1,9 +1,11 @@
 import React from "react";
+import Header from "../../components/Header/Header";
 
 function PokedexScreen() {
   return (
     <div>
-      Minha PokedexScreen
+      <Header screenPokedex/>
+      <h1>Minha PokedexScreen</h1>
     </div>
   );
 }

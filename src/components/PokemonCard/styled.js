@@ -7,8 +7,6 @@ export const CardPokemon = styled.div`
   width: auto;
   min-width: 18.75rem;
   height: 13.125rem;
-  left: 0px;
-  top: 0px;
   border: solid blue 1px;
   
   border-radius: 0.75rem;
