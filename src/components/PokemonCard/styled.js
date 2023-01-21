@@ -4,7 +4,7 @@ export const CardPokemon = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  width: auto;
+  /* width: auto; */
   min-width: 18.75rem;
   height: 13.125rem;
   border: solid blue 1px;
@@ -14,7 +14,6 @@ export const CardPokemon = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-    border: solid blue 1px;
 `
 
 export const ImgPokemon = styled.img`
@@ -31,7 +30,7 @@ export const CardButton = styled.div`
   margin-top: 15%;
 `;
 
-export const ButtonCapture = styled.button`
+export const ButtonCaptureRemove = styled.button`
   display: flex;
   flex-direction: row;
   justify-content: center;

@@ -28,8 +28,9 @@ export const ButtonPokedex = styled.button`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 15%;  
-  min-width: 80px;
+  padding: 10px;
+  /* width: 15%;   */
+  /* min-width: 80px; */
   /* left: 80%;
   position: absolute;
   height: 8vh;

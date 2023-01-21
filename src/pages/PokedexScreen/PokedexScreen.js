@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 import Header from "../../components/Header/Header";
+import PokemonCard from "../../components/PokemonCard/PokemonCard";
+import { GlobalStateContext } from "../../global/GlobalContex";
+import { ContainerPokedex } from "./styled";
 
 function PokedexScreen() {
+  const {pokedex} = useContext(GlobalStateContext)
   return (
     <div>
       <Header screenPokedex/>
-      <h1>Minha PokedexScreen</h1>
+      <ContainerPokedex>
+        {
+          pokedex && pokedex.map((pokemon)=> {
+            return(
+              <PokemonCard 
+              key={pokemon.name} 
+              isPokedex 
+              pokemon={pokemon}
+              />
+            )
+          })
+        }
+      </ContainerPokedex>
     </div>
   );
 }

@@ -17,7 +17,6 @@ function PokemonDetailScreen() {
   const [selectedPokemon, setSelectedPokemon] = useState({});
   const { name } = useParams();
   const { pokemons } = useContext(GlobalStateContext);
-  // console.log(name)
 
   useEffect(() => {
     const currentPokemon = pokemons.find((item) => item.name === name);
@@ -25,7 +24,7 @@ function PokemonDetailScreen() {
   }, []);
   return (
     <div>
-      <Header />
+      <Header screenPokedex/>
       <PokeInfosContainer>
         {selectedPokemon && selectedPokemon.sprites &&
         <ImagesContainer>
